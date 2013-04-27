@@ -1,0 +1,93 @@
+#cup1, #cup2, #cup3{
+	display:block;
+	height:179px;
+	margin: 0;
+	position:relative;
+	width:130px;
+	z-index:1000;	
+}
+
+#cupList{
+	height:300px;
+	list-style:none;
+}
+
+#cupList li{
+	display:inline;
+	float:left;
+	height:300px;
+	margin: 0 10px 0;
+}
+
+#cupWrapper {
+  	margin: 0 auto;
+  	position: relative;
+  	top: 20px;
+  	width: 570px;
+}
+
+#header{
+  	margin:0 auto;
+	text-align:center;
+	width:300px;
+}
+
+.hide{
+  	display:none;	
+}
+
+#info{
+	color:#FFF;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	margin:15px 0 0 20px;
+	width:230px;
+}
+
+#instructions {
+  	color: #FFFFFF;
+  	float: right;
+  	font-family: Arial,Helvetica,sans-serif;
+  	margin-right: 20px;
+  	width: 400px;
+}
+
+.loser{
+	background:url(../images/loser.png) no-repeat 0 0 transparent;		
+}
+
+#pos1, #pos2, #pos3{
+	height:85px;
+	width:85px;
+	margin:-100px auto 0;
+	z-index:0;
+}
+
+#replayBtn {
+  	height: 30px;
+  	margin-left:90px;
+  	position: relative;
+  	top: 30px;
+  	width:200px;
+}
+
+#stage{
+	background:url(../images/table.jpg) no-repeat 0 0;
+	height:667px;
+	margin:0 auto;
+	width:1000px;
+}
+
+#topRow{
+	height:200px;
+}
+
+#topRow div{
+	display:inline;	
+}
+
+.winner{
+	background:url(../images/winner.png) no-repeat 0 0 transparent;	
+}

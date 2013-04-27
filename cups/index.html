@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Cups: A HTML/Javascript exercise by Paul M. King, February 4, 2012 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cups</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="js/cups.js"></script>  
+</head>
+
+<body onload="playGame()">
+	<div id="stage">
+  <div id="topRow">
+        	<div id="info">
+        		<div id="coinWrapper"></div>
+                <br/>
+            	<div id="roundCounter"></div>
+        	</div>
+            <div id="replayBtn">
+        		<a href="#" onclick="resetGame()" id="replayLink" class="hide"><img src="images/nextRoundBtn.png" width="175" height="50" border="0"/></a>
+        	</div>
+    		<div id="instructions">
+            	<ul>
+            		<li>Play as many consecutive rounds as you are able</li>
+                	<li>Each round costs 1 coin</li>
+            		<li>Find <img src="images/winner_SM.png" width="16" height="16" /> and win 1 coin back</li>
+            		<li>Game ends when you are out of coins</li>
+            	</ul>
+        	</div>
+		</div>
+	  <div id="cupWrapper">
+        	<ul id="cupList">
+            	<li>
+                  <a href="#" onclick="revealSelection(1)"><img src="images/cup.png" width="130" height="179" border="0" id="cup1"/></a>
+            	  <div id="pos1"></div>
+                </li>
+                <li>&nbsp;</li>
+                <li>
+                  <a href="#" onclick="revealSelection(2)"><img src="images/cup.png" width="130" height="179" border="0" id="cup2"/></a>
+                  <div id="pos2"></div>
+                </li>
+                <li>&nbsp;</li>
+                <li>
+                  <a href="#" onclick="revealSelection(3)"><img src="images/cup.png" width="130" height="179" border="0" id="cup3"/></a>
+                  <div id="pos3"></div>
+                </li>
+            </ul>
+        </div>
+	</div>
+    <span id="soundSpan"></span>
+</body>
+</html>
